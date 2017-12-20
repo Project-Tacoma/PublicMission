@@ -3,7 +3,6 @@ missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTick
 
 //Init tasks
 _tasks = getArray(missionConfigFile >> "CfgTaskSystem" >> "tasks");
-
 {
   [
   west,
@@ -21,4 +20,8 @@ _tasks = getArray(missionConfigFile >> "CfgTaskSystem" >> "tasks");
 //Add Costum EH's
 ["psm_onTicketLose", {
   [_this select 0, _this select 1] call framework_fnc_onTicketLose;
+}] call CBA_fnc_addEventHandler;
+
+["psm_onTaskCompleted", {
+  [_this select 0] call framework_fnc_onTaskCompleted;
 }] call CBA_fnc_addEventHandler;

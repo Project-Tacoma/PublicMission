@@ -4,6 +4,7 @@ class framework {
     file="Framework\EventHandler";
     class onRespawn{};
     class onTicketLose{};
+    class onTaskCompleted{};
   };
 
   class ticket {
