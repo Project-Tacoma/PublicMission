@@ -17,3 +17,8 @@ _tasks = getArray(missionConfigFile >> "CfgTaskSystem" >> "tasks");
   ] call framework_fnc_createTask;
 
 } count _tasks;
+
+//Add Costum EH's
+["psm_onTicketLose", {
+  [_this select 0, _this select 1] call framework_fnc_onTicketLose;
+}] call CBA_fnc_addEventHandler;

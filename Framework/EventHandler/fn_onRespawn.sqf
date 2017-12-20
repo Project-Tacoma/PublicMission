@@ -1,3 +1,12 @@
+//!!!NEEDS REWRITE!!!
+/*
+ * Author: [1st ECOM] flaver
+ * Event will be triggerd only on server
+ *
+ * Arguments:
+ * 0: _player <OBJECT>
+ * 2: _type <STRING>
+ */
 
 params["_player"];
 
