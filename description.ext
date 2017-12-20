@@ -1,0 +1,23 @@
+onLoadName = "Project Milsim";			// wird im Ladebildschirm über dem Bild angezeigt
+author = "[1st ECOM] flaver";						// wird im Ladebildschirm über dem Bild angezeigt
+onLoadMission = "1.0.0";			// wird im Ladebildschirm unter dem Bild angezeigt
+overviewText = "";					// wird in der Missionsauswahl beim Anklicken links unten angezeigt
+disabledAI = true;
+//disableChannels[] = {0,2,4,5,6};
+respawn = 				"BASE";
+respawnDelay = 			1;
+respawnDialog = 1;
+joinUnassigned = 1;
+
+#include "CfgTicketSystem.hpp"
+#include "CfgTaskSystem.hpp"
+
+class Header {
+  gameType = COOP;
+  minPlayers = 1;
+  maxPlayers = 100;
+};
+
+class CfgFunctions {
+  #include "Framework\CfgFunctions.hpp"
+};
