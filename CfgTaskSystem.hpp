@@ -11,6 +11,8 @@ class CfgTaskSystem {
     markerName = "pms_exampleTask1"; // The name of the empty marker that you have given in the mission
     taskType = "kill"; //https://community.bistudio.com/wiki/Arma_3_Tasks_Overhaul#Default_Task_Types:_Actions
     reward = 20 //How many tickets they get for this
+    minPlayer = 5; //Min player who you need for this mission
+    maxPlayer = 10; //Max player who you need for this mission
 
     //lists here all side tasks
     sideMissions[] = {"pms_exampleSideTask"};
@@ -24,6 +26,8 @@ class CfgTaskSystem {
         markerName = "pms_exampleSideTask1"
         taskType = "scout";
         reward = 10;
+        minPlayer = 2;
+        maxPlayer = 4;
 
       };
 
