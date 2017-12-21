@@ -5,7 +5,7 @@ class framework {
     class onRespawn{};
     class onTicketLose{};
     class onTaskCompleted{};
-    class onCreateUser{};
+    class onSendQuery{};
   };
 
   class ticket {
