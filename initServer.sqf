@@ -1,3 +1,6 @@
+//Init databse
+//call framework_fnc_connector;
+
 //Set tickets
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
 
@@ -18,10 +21,14 @@ _tasks = getArray(missionConfigFile >> "CfgTaskSystem" >> "tasks");
 } count _tasks;
 
 //Add Costum EH's
-["psm_onTicketLose", {
+["pt_onTicketLose", {
   [_this select 0, _this select 1] call framework_fnc_onTicketLose;
 }] call CBA_fnc_addEventHandler;
 
-["psm_onTaskCompleted", {
+["pt_onTaskCompleted", {
   [_this select 0] call framework_fnc_onTaskCompleted;
+}] call CBA_fnc_addEventHandler;
+
+["pt_onCreateUser", {
+  [_this select 0] call framework_fnc_onCreateUser;
 }] call CBA_fnc_addEventHandler;

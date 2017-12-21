@@ -10,7 +10,7 @@
 params["_player", "_type"];
 
 //@AS_TODO fir the moment okay, but later we need to make this a little more dynamic
-if (_type == "pms_civ_killed") then {
+if (_type == "pt_civ_killed") then {
     private _currentTickets = call framework_fnc_getTicket;
     private _newTickets = _currentTickets - getNumber(missionConfigFile >> "CfgTicketSystem" >> "civPunish");
     [_newTickets] call framework_fnc_setTicket;

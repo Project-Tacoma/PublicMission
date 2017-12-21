@@ -5,6 +5,7 @@ class framework {
     class onRespawn{};
     class onTicketLose{};
     class onTaskCompleted{};
+    class onCreateUser{};
   };
 
   class ticket {
@@ -17,6 +18,11 @@ class framework {
   class task {
     file="Framework\Task";
     class createTask{};
+  };
+
+  class database {
+    file="Framework\Database";
+    class connector{};
   };
 
 };
