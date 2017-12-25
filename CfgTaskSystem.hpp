@@ -2,9 +2,9 @@ class CfgTaskSystem {
 
   //Just add here the main task
   //The tasks will be activated in order of this array!
-  tasks[] = {"pms_exmapleTask1"};
+  tasks[] = {"pt_exmapleTask1"};
 
-  class pms_exmapleTask1 {
+  class pt_exmapleTask1 {
 
     name = "Example"; //Name of the task
     desc = "Example desc"; // Description of the task
@@ -19,7 +19,7 @@ class CfgTaskSystem {
 
     class sideTasks {
 
-      class pms_exampleSideTask {
+      class pt_exampleSideTask {
 
         name = "Example Side"
         desc = "Example Side desc!";

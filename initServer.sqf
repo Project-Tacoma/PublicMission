@@ -1,8 +1,5 @@
 //Init databse
-call framework_fnc_connector;
-
-pt_running_query = false;
-pt_result_content = nil;
+//call framework_fnc_connector;
 
 //Set tickets
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
@@ -30,8 +27,4 @@ _tasks = getArray(missionConfigFile >> "CfgTaskSystem" >> "tasks");
 
 ["pt_onTaskCompleted", {
   [_this select 0] call framework_fnc_onTaskCompleted;
-}] call CBA_fnc_addEventHandler;
-
-["pt_onSendQuery", {
-  [_this select 0] spawn framework_fnc_onSendQuery;
 }] call CBA_fnc_addEventHandler;

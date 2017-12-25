@@ -23,6 +23,8 @@ class framework {
   class database {
     file="Framework\Database";
     class connector{};
+    class getPlayer{};
+    class savePlayer{};
   };
 
 };
