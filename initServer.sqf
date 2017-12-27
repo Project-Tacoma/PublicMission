@@ -5,7 +5,11 @@
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
 
 //Init tasks
-_tasks = getArray(missionConfigFile >> "CfgTaskSystem" >> "tasks");
+//for the moment just select the first opertion
+//Later get that from db
+_ops    = getArray(missionConfigFile >> "CfgTaskSystem" >> "PT_Operations" >> "operations") select 0;
+_tasks  = getArray(missionConfigFile >> "CfgTaskSystem" >> "PT_Operations" >> _ops >> "tasks");
+
 {
   [
   west,

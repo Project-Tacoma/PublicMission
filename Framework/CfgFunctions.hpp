@@ -27,4 +27,9 @@ class framework {
     class savePlayer{};
   };
 
+  class tfar {
+    file="Framework\TFAR";
+    class checkTFARConnection{};
+  };
+
 };
