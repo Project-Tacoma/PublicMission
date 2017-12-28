@@ -1,6 +1,8 @@
 //Init databse
 //call framework_fnc_connector;
 
+//
+
 //Set tickets
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
 
