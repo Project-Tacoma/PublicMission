@@ -1,5 +1,7 @@
+#include "script_common_macros.hpp"
+
 //Init databse
-//call framework_fnc_connector;
+call FUNC(connector);
 
 //
 
@@ -9,8 +11,7 @@ missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTick
 //Init tasks
 //for the moment just select the first opertion
 //Later get that from db
-_ops    = getArray(missionConfigFile >> "CfgTaskSystem" >> "PT_Operations" >> "operations") select 0;
-_tasks  = getArray(missionConfigFile >> "CfgTaskSystem" >> "PT_Operations" >> _ops >> "tasks");
+_tasks  = getArray(missionConfigFile >> "CfgTaskSystem" >> "tasks");
 
 {
   [
@@ -22,15 +23,15 @@ _tasks  = getArray(missionConfigFile >> "CfgTaskSystem" >> "PT_Operations" >> _o
     getText (missionConfigFile >> "CfgTaskSystem" >> _x >> "markerName")
   ],
   getText (missionConfigFile >> "CfgTaskSystem" >> _x >> "taskType")
-  ] call framework_fnc_createTask;
+  ] call FUNC(createTask);
 
 } count _tasks;
 
 //Add Costum EH's
-["pt_onTicketLose", {
-  [_this select 0, _this select 1] call framework_fnc_onTicketLose;
+["pta_onTicketLose", {
+  [_this select 0, _this select 1] call FUNC(onTicketLose);
 }] call CBA_fnc_addEventHandler;
 
-["pt_onTaskCompleted", {
-  [_this select 0] call framework_fnc_onTaskCompleted;
+["pta_onTaskCompleted", {
+  [_this select 0] call FUNC(onTaskCompleted);
 }] call CBA_fnc_addEventHandler;

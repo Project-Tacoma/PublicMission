@@ -1,3 +1,4 @@
+#include "..\..\script_common_macros.hpp"
 /*
  * Author: [1st ECOM] flaver
  * Check's if the user

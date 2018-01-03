@@ -5,13 +5,14 @@
  *
  */
 
+params["_player"];
 //Add respawn eh
 //[player] call framework_fnc_onRespawn;
 
 //Check if we have the user allready
-//["pt_onSendQuery",["getPlayer",[getPlayerUID player]]] call CBA_fnc_serverEvent;
+[player, owner player] remoteExec[QFUNC(getPlayer),2];
 
 //Add TFAR check!
 if (!(PT_Dev)) then {
-    [player] call framework_fnc_checkTFARConnection;
+  [_player] call FUNC(checkTFARConnection);
 };

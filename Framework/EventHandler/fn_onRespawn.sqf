@@ -1,3 +1,4 @@
+#include "..\..\script_common_macros.hpp"
 //!!!NEEDS REWRITE!!!
 /*
  * Author: [1st ECOM] flaver

@@ -8,6 +8,7 @@ respawnDelay    = 1;
 respawnDialog   = 1;
 joinUnassigned  = 1;
 
+#include "script_common_macros.hpp"
 #include "CfgTicketSystem.hpp"
 #include "CfgTaskSystem.hpp"
 

@@ -1,3 +1,5 @@
+#include "script_common_macros.hpp"
+
 enableSaving [false, false];
 PT_Dev = true;
-call framework_fnc_showTicket;
+call FUNC(showTicket);

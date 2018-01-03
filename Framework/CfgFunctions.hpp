@@ -1,11 +1,12 @@
-class framework {
+class ADDON {
+
+  tag = QUOTE(ADDON);
 
   class eventHandler {
     file="Framework\EventHandler";
     class onRespawn{};
     class onTicketLose{};
     class onTaskCompleted{};
-    class onSendQuery{};
   };
 
   class ticket {
@@ -25,11 +26,17 @@ class framework {
     class connector{};
     class getPlayer{};
     class savePlayer{};
+    class getResult{};
   };
 
   class tfar {
     file="Framework\TFAR";
     class checkTFARConnection{};
+  };
+
+  class session {
+    file="Framework\Session";
+    class receiveData{};
   };
 
 };

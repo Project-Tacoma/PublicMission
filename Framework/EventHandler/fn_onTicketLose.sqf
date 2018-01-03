@@ -1,3 +1,4 @@
+#include "..\..\script_common_macros.hpp"
 /*
  * Author: [1st ECOM] flaver
  * Event will be triggerd only on server
@@ -11,14 +12,14 @@ params["_player", "_type"];
 
 //@AS_TODO fir the moment okay, but later we need to make this a little more dynamic
 if (_type == "pt_civ_killed") then {
-    private _currentTickets = call framework_fnc_getTicket;
+    private _currentTickets = call FUNC(getTicket);
     private _newTickets = _currentTickets - getNumber(missionConfigFile >> "CfgTicketSystem" >> "civPunish");
-    [_newTickets] call framework_fnc_setTicket;
+    [_newTickets] call FUNC(setTicket);
 } else {
-    private _currentTickets = call framework_fnc_getTicket;
+    private _currentTickets = call FUNC(getTicket);
     private _newTickets = _currentTickets - getNumber(missionConfigFile >> "CfgTicketSystem" >> "death");
-    [_newTickets] call framework_fnc_setTicket;
+    [_newTickets] call FUNC(setTicket);
 };
 
 //show the new tickets
-call framework_fnc_showTicket;
+call FUNC(showTicket);
