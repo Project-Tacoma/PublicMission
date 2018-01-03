@@ -21,6 +21,11 @@ class ADDON {
     class createTask{};
   };
 
+  class generator {
+    file="Framework\Generator\Functions";
+    class createLocation{};
+  };
+
   class database {
     file="Framework\Database";
     class connector{};
