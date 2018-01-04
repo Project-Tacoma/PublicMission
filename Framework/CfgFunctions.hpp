@@ -25,6 +25,8 @@ class ADDON {
     file="Framework\Generator\Functions";
     class createLocation{};
     class createMission{};
+    class taskPatrol {};
+  	class taskPatrolFull {};
   };
 
   class database {
