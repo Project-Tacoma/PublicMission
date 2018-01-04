@@ -18,8 +18,6 @@ private _mission = call FUNC(createMission);
 
 [_mission select 0, _mission select 1] call FUNC(createLocation);
 
-wa
-
 
 /*
  -- create Missiontype
