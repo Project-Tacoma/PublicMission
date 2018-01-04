@@ -3,8 +3,8 @@
 
 private _missiontypes = [
   ["HighValueTarget", "house"],
-  ["HighValueTarget", "house"],
-  ["HighValueTarget", "house"]
+  //["TankDestroy", "street"],
+  //["DroneDestroy", "any"]
 ];
 
 _mission = selectRandom _missiontypes;

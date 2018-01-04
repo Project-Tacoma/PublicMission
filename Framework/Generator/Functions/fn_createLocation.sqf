@@ -8,13 +8,20 @@
  * Positionsarray
  *
  * Example:
- * ["house_position"] call framework_fnc_createLocation
+ * ["house"] call framework_fnc_createLocation
  *
  * Public: [Yes/No]
  */
 
  params ["_type"];
+ private ["_pos"];
 
- private _pos = [getMarkerPos "Basis", 800, 5000, 3, 0, 20, 0] call BIS_fnc_findSafePos;
+switch (_type) do {
+    //cases (insertable by snippet)
+    case ("house"): {
+      _pos = [getMarkerPos "Basis", 800, 5000, 3, 0, 35, 0] call BIS_fnc_findSafePos;
+    };
+};
 
+ 
  _pos
