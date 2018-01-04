@@ -2,7 +2,6 @@
  * Author: [1st] Commander
  *Set Location of the Mission
  *
- * Arguments:
  * 0: Type of needed Location
  *
  * Return Value:
@@ -16,4 +15,6 @@
 
  params ["_type"];
 
- 
+ private _pos = [getMarkerPos "Basis", 800, 5000, 3, 0, 20, 0] call BIS_fnc_findSafePos;
+
+ _pos

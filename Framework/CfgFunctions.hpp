@@ -24,6 +24,7 @@ class ADDON {
   class generator {
     file="Framework\Generator\Functions";
     class createLocation{};
+    class createMission{};
   };
 
   class database {
