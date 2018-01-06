@@ -33,6 +33,7 @@ class ADDON {
     class getPlayer{};
     class savePlayer{};
     class getResult{};
+    class displayPlayer{};
   };
 
   class tfar {
