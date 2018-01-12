@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=105;
+		nextID=107;
 	};
 	class Camera
 	{
@@ -23541,7 +23541,7 @@ class Mission
 					};
 					id=1275;
 					type="RHS_TOW_TriPod_D";
-					atlOffset=0.00034141541;
+					atlOffset=0.0003490448;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23909,7 +23909,7 @@ class Mission
 						};
 					};
 					id=1274;
-					atlOffset=0.00034141541;
+					atlOffset=0.0003490448;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -30602,13 +30602,14 @@ class Mission
 						angles[]={0.0099230884,5.6567507,6.2648048};
 					};
 					side="East";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=1;
 					};
 					id=2597;
 					type="O_Soldier_F";
+					atlOffset=12.387451;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -30660,7 +30661,7 @@ class Mission
 				};
 			};
 			id=2595;
-			atlOffset=2.9491272;
+			atlOffset=12.365845;
 		};
 		class Item293
 		{
@@ -30677,7 +30678,7 @@ class Mission
 			};
 			id=2596;
 			type="O_static_AA_F";
-			atlOffset=2.9491272;
+			atlOffset=12.365845;
 		};
 		class Item294
 		{
