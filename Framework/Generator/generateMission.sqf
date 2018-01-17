@@ -61,6 +61,7 @@ waitUntil {
 //"Drohne zerstoert" remoteExec ["hint"];
 sleep 10;
  [_task, "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
+ //["pt_onTaskCompleted", ["pta_exmapleTask1"]] call CBA_fnc_globalEvent;
 	{
   if(side _x == East) then {
 		_x setDamage 1;
