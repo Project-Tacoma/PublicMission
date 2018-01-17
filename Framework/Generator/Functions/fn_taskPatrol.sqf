@@ -28,7 +28,7 @@ usage: For example put the following in the init of a group in the editor.
 
 */
 
-private ["_group", "_copies", "_radius", "_type", "_target","_range","_side"];
+private ["_group", "_copies", "_radius", "_type", "_target","_range","_side","_groupHandover"];
 
 _group = _this select 0;
 _groupHandover = _this select 0;
@@ -36,7 +36,6 @@ if (typeName _group == "ARRAY") then {
 	_group = (_this select 0) select 0;
 	_copies = (_this select 0) select 1;
 	_range = (_this select 0) select 2;
-	hint format ["%1", _range];
 	} else {
 	_group = _this select 0;
 		};

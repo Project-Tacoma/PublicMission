@@ -27,6 +27,7 @@ class ADDON {
     class createMission{};
     class taskPatrol {};
   	class taskPatrolFull {};
+    class generateTask {};
   };
 
   class database {

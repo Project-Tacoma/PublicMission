@@ -6,3 +6,6 @@ call FUNC(showTicket);
 
 
 //Bones war hier
+
+//start Missionen
+//execVM "Framework\Generator\generateMission.sqf";

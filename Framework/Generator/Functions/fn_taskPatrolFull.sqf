@@ -82,10 +82,11 @@ if (typeName _group == "ARRAY") then {
 	_side = side leader _group;
 
 	for "_i" from 1 to _copies do {
-		_target = [_target, 5, _range, 1, 0, 60, 0] call BIS_fnc_findSafePos;
-		_group = [_target, _side, _units] call BIS_fnc_spawnGroup;
+		private _target2 = [_target, 5, _range, 1, 0, 60, 0] call BIS_fnc_findSafePos;
+		_group = [_target2, _side, _units] call BIS_fnc_spawnGroup;
 		sleep 3;
 		_this set [0, _group];
+		_this set [1, _target2];
 		_this spawn FUNC(taskPatrolFull);
 	};
 	_group = _group2;

@@ -10,7 +10,7 @@
  * 3: _taskType <STRING>
  *
  */
-params["_side","_taskid", "_taskInfo", "_taskType"];
+params["_side","_taskid", "_taskInfo"];
 
 [
   _taskid,
@@ -20,7 +20,5 @@ params["_side","_taskid", "_taskInfo", "_taskType"];
   "CREATED",
   1,
   true,
-  true,
-  _taskType,
-  false
+  true
 ] call BIS_fnc_setTask;
