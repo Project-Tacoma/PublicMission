@@ -1,4 +1,15 @@
 #include "..\..\script_common_macros.hpp"
+/*
+ * Author: [1st ECOM] flaver
+ * Connector for database
+ *
+ * Arguments:
+ * NONE
+ *
+ * Return Value:
+ * _result
+ *
+ */
 
 _return = false;
 if (isNil {uiNamespace getVariable "extDB_SQL_CUSTOM_ID"}) then {

@@ -1,6 +1,6 @@
-onLoadName      = "Project Milsim";
-author          = "[1st ECOM] flaver";
-onLoadMission   = "1.0.0";
+onLoadName      = "Project Tacoma";
+author          = "Project Tacoma Team";
+onLoadMission   = "0.0.1 Pre-Alpha";
 overviewText    = "";
 disabledAI      = true;
 respawn         = "BASE";
@@ -18,6 +18,9 @@ class Header {
   maxPlayers  = 100;
 };
 
+#include "VVS\menu.h"
+
 class CfgFunctions {
+  #include "VVS\Functions.h"
   #include "Framework\CfgFunctions.hpp"
 };
