@@ -49,4 +49,10 @@ class ADDON {
     class receiveData{};
   };
 
+  class arsenal {
+    file="Framework\Arsenal";
+    class initArsenal{};
+    class bindArsenal{};
+  };
+
 };
