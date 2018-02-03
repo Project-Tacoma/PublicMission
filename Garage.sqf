@@ -84,9 +84,9 @@ then
 	[_garage, 0, ["VVS"], _action1_7] call ace_interact_menu_fnc_addActionToObject;
 };
 
-_action2_0 = ["VVS", "Delete Vehicle", _iconType,
+_action2_0 = ["VVS_Delete", "Delete Vehicle", _iconType,
 {
-    _marker = _this select 3 select 0;
+    _marker = _this select 2 select 0;
     _junk = nearestObjects [(getMarkerPos _marker), [], 6];
     if !(_junk isEqualTo []) then {
         {
@@ -94,7 +94,7 @@ _action2_0 = ["VVS", "Delete Vehicle", _iconType,
         } forEach _junk;
     };
 },{true}, {}, [_marker], [0,0,0.4], 5] call ace_interact_menu_fnc_createAction;
-[_garage, 0, [], _action1_0] call ace_interact_menu_fnc_addActionToObject;
+[_garage, 0, [], _action2_0] call ace_interact_menu_fnc_addActionToObject;
 
 if (typeOf _garage in ["Box_IND_AmmoVeh_F","Box_EAST_AmmoVeh_F","Box_NATO_AmmoVeh_F"]) then
 {

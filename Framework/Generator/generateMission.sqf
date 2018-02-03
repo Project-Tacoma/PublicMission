@@ -51,7 +51,7 @@ sleep 5;
 _drone = "O_UAV_02_dynamicLoadout_F" createVehicle _pos;
 
 sleep 4;
-//["task1"] call BIS_fnc_taskSetCurrent;
+[_task] call BIS_fnc_taskSetCurrent;
 
 waitUntil {
 	sleep 2;

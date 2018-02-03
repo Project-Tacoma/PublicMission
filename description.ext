@@ -1,6 +1,6 @@
 onLoadName      = "Project Tacoma";
 author          = "Project Tacoma Team";
-onLoadMission   = "0.0.1 Pre-Alpha";
+onLoadMission   = "0.0.3 Pre-Alpha";
 overviewText    = "";
 disabledAI      = true;
 respawn         = "BASE";

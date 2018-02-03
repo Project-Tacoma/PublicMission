@@ -124,7 +124,6 @@ VVS_Autonomous =
 	"B_UAV_06_F","B_UAV_06_medical_F",															//AL-6 Pelican
 	"B_UAV_01_F","IB_B_UAV_01_F",																//AR-2 Darter
 	"B_UGV_01_F","B_UGV_01_rcws_F",																//UGV Stomper
-	"B_T_UAV_03_F",																				//MQ-12 Falcon
 	"B_UAV_02_dynamicLoadout_F","B_UAV_02_CAS_F",												//MQ4A Greyhawk
 	"B_UAV_05_F"																				//UCAV Sentinel
 ];
