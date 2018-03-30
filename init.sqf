@@ -1,9 +1,8 @@
 #include "script_common_macros.hpp"
 
 enableSaving [false, false];
-PT_Dev = true;
-call FUNC(showTicket);
-
+GVAR(PT_Dev) = true;
+//call FUNC(showTicket);call FUNC(initSector);
 
 //Bones war hier
 

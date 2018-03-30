@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [1st ECOM] flaver
+ * Author: [NRF] flaver
  * EH gets triggerd when task is completed
  *
  * Arguments:

@@ -1,6 +1,6 @@
 #include "script_common_macros.hpp"
 /*
- * Author: [1st ECOM] flaver
+ * Author: [NRF] flaver
  * Local player init
  *
  */
@@ -11,7 +11,7 @@ params["_player"];
 [player] call FUNC(onRespawn);
 
 //Check if we have the user allready
-[player, owner player] remoteExec[QFUNC(getPlayer),2];
+//[player, owner player] remoteExec[QFUNC(getPlayer),2];
 
 [
 {!(isNil {player getVariable ["pta_player", nil]})},
@@ -24,6 +24,6 @@ params["_player"];
 ] call CBA_fnc_waitUntilAndExecute;
 
 //Add TFAR check!
-if (!(PT_Dev)) then {
+if (!(GVAR(PT_Dev))) then {
   [_player] call FUNC(checkTFARConnection);
 };

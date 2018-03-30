@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [1st ECOM] flaver
+ * Author: [NRF] flaver
  * Check's if the user
  * has enabled the plugin
  * is on the right TS
@@ -42,7 +42,7 @@ if (!(_tacTFEnabled)) then {
 
 //Global vars
 PT_TFAREnabled = true;
-PT_OnTsServer = "[1st ECOM]" == (call TFAR_fnc_getTeamSpeakServerName);
+PT_OnTsServer = "[NRF]" == (call TFAR_fnc_getTeamSpeakServerName);
 PT_OnChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
 titleText ["TFAR is loaded!", "BLACK IN"];
 
@@ -58,7 +58,7 @@ titleText ["TFAR is loaded!", "BLACK IN"];
      PT_TFAREnabled = false;
    };
 
-   _onTsServer = "[1st ECOM]" == (call TFAR_fnc_isTeamspeakPluginEnabled);
+   _onTsServer = "[NRF]" == (call TFAR_fnc_isTeamspeakPluginEnabled);
 
    if (!(_onTsServer)) then {
        titleText ["Please join the teamspeak server! Adress: 127.0.0.1", "BLACK"];

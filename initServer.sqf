@@ -1,9 +1,7 @@
 #include "script_common_macros.hpp"
 
 //Init databse
-call FUNC(connector);
-
-//
+//call FUNC(connector);
 
 //Set tickets
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
@@ -15,4 +13,8 @@ missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTick
 
 ["pta_onTaskCompleted", {
   [_this select 0] call FUNC(onTaskCompleted);
+}] call CBA_fnc_addEventHandler;
+
+["pta_onSectorConquered", {
+  [_this select 0] call FUNC(onSectorConquered);
 }] call CBA_fnc_addEventHandler;

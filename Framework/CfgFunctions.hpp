@@ -7,6 +7,7 @@ class ADDON {
     class onRespawn{};
     class onTicketLose{};
     class onTaskCompleted{};
+    class onSectorConquered{};
   };
 
   class ticket {
@@ -47,6 +48,11 @@ class ADDON {
   class session {
     file="Framework\Session";
     class receiveData{};
+  };
+
+  class sector {
+    file="Framework\Sector";
+
   };
 
 };

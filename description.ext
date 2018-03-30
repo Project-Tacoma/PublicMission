@@ -11,6 +11,7 @@ joinUnassigned  = 1;
 #include "script_common_macros.hpp"
 #include "CfgTicketSystem.hpp"
 #include "CfgTaskSystem.hpp"
+#include "CfgSector.hpp"
 
 class Header {
   gameType    = COOP;

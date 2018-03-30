@@ -1,5 +1,5 @@
 /*
- * Author: [1st ECOM] flaver
+ * Author: [NRF] flaver
  * Setter for tickets
  *
  * Arguments:

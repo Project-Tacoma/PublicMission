@@ -1,5 +1,5 @@
 /*
- * Author: [1st ECOM] flaver
+ * Author: [NRF] flaver
  * Gets the current tickets
  *
  * Arguments:

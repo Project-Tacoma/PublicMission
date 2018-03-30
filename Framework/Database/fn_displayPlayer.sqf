@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [1st ECOM] flaver
+ * Author: [NRF] flaver
  * Sets the status for the website. So if we display him or not
  *
  * Arguments:

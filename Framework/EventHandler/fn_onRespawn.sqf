@@ -1,7 +1,7 @@
 #include "..\..\script_common_macros.hpp"
 //!!!NEEDS REWRITE!!!
 /*
- * Author: [1st ECOM] flaver
+ * Author: [NRF] flaver
  * Event will be triggerd only on server
  *
  * Arguments:
