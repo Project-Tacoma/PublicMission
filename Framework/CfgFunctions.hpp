@@ -53,7 +53,11 @@ class ADDON {
 
   class sector {
     file="Framework\Sector";
+  };
 
+  class hud {
+    file="Framework\Hud";
+    class initHud{};
   };
 
 };

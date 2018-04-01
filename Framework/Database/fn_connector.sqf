@@ -20,7 +20,7 @@ if (isNil {uiNamespace getVariable "extDB_SQL_CUSTOM_ID"}) then {
     if (_result == "") exitWith {diag_log "[PROJECT-TACOMA] extDB3 faild to load"; false};
 
     //connect to db
-    _result = parseSimpleArray (DB "9:ADD_DATABASE:Tacoma");
+    _result = parseSimpleArray (DB "9:ADD_DATABASE:TacomaLocal");
     if(_result select 0 isEqualTo 0) exitWith { diag_log format["[PROJECT-TACOMA] Error setting up db connection: %1", _result]; false};
 
 	   _random_number = round(random(999999));
@@ -28,7 +28,7 @@ if (isNil {uiNamespace getVariable "extDB_SQL_CUSTOM_ID"}) then {
 	   extDB_SQL_CUSTOM_ID = compileFinal _extDB_SQL_CUSTOM_ID;
 
      //Set up protocol
-    _result = parseSimpleArray (DB "9:ADD_DATABASE_PROTOCOL:Tacoma:SQL_CUSTOM:sql:pt.ini");
+    _result = parseSimpleArray (DB "9:ADD_DATABASE_PROTOCOL:TacomaLocal:SQL_CUSTOM:sql:pt.ini");
 	   if ((_result select 0) isEqualTo 0) exitWith {diag_log format ["[PROJECT-TACOMA] Error Database Setup: %1", _result]; false};
 
     diag_log format["[PROJECT-TACOMA] init done with Protocol"];

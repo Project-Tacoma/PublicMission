@@ -12,6 +12,7 @@ joinUnassigned  = 1;
 #include "CfgTicketSystem.hpp"
 #include "CfgTaskSystem.hpp"
 #include "CfgSector.hpp"
+#include "CfgProvince.hpp"
 #include "CfgNotifications.hpp"
 
 class Header {
@@ -25,4 +26,9 @@ class Header {
 class CfgFunctions {
   #include "VVS\Functions.h"
   #include "Framework\CfgFunctions.hpp"
+};
+
+class RscTitles {
+  titles[] = {"Pta_UI"};
+  #include "Pta_UI.h"
 };

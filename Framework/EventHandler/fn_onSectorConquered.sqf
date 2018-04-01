@@ -12,6 +12,22 @@ _rescources = "";
 _mgs = format["Resourcen: %1", _rescources];
 ["pta_sector_conquered",[_mgs]] call bis_fnc_showNotification;
 
-sleep 10;
+/*
+_sectorConquered = missionNamespace getVariable "PTA_Conquered_Sector";
+
+{
+  _conquered = _sectorConquered find _x;
+
+  if !(_sectorConquered == -1) then {
+    if(count(_conquered) == 1) {
+      _mgs = format["Die Provinz: %1 ist jetzt frei!!", getText(missionConfigFile >> "CfgProvince" >> _x >> "name")];
+      ["pta_sector_conquered",[_mgs]] call bis_fnc_showNotification;
+      sleep 15;
+    };
+  };
+
+} count getArray(missionConfigFile >> "CfgSector" >> _sector >> "province");
+
+sleep 15;*/
 _sector setMarkerColor "ColorBlufor";
 [_task, "SUCCEEDED",true] spawn BIS_fnc_taskSetState;

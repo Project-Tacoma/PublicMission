@@ -7,6 +7,26 @@
                 <German>Der Sektor ist jetzt unter unserer Controlle</German>
                 <Original>Sector is under our control</Original>
             </Key>
+            <Key ID="STR_pta_ui_fule">
+              <English>Fule</English>
+              <German>Benzin</German>
+              <Original>Fule</Original>
+            </Key>
+            <Key ID="STR_pta_ui_oil">
+              <English>Oil</English>
+              <German>Öl</German>
+              <Original>Oil</Original>
+            </Key>
+            <Key ID="STR_pta_ui_sulfur">
+              <English>Sulfur</English>
+              <German>Schwefel</German>
+              <Original>Sulfur</Original>
+            </Key>
+            <Key ID="STR_pta_ui_moral">
+              <English>Moral</English>
+              <German>Moral</German>
+              <Original>Moral</Original>
+            </Key>
         </Container>
     </Package>
 </Project>

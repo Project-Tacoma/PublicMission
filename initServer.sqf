@@ -1,10 +1,11 @@
 #include "script_common_macros.hpp"
 
 //Init databse
-//call FUNC(connector);
+call FUNC(connector);
 
-//Set tickets
+//Set mission vars
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
+missionNamespace setVariable ["PTA_Conquered_Sector", []];
 
 //Add Costum EH's
 ["pta_onTicketLose", {

@@ -3,5 +3,6 @@ class CfgSector {
     name="Sector Alpha";
     resource[] = {"Schwefel"};
     tasks[] = {"pta_task_sector1"};
+    province[] = {"pta_province_1"};
   };
 };
