@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3079;
+		nextID=3086;
 	};
 	class MarkerIDProvider
 	{
-		nextID=63;
+		nextID=64;
 	};
 	class LayerIndexProvider
 	{
-		nextID=131;
+		nextID=133;
 	};
 	class Camera
 	{
-		pos[]={11866.739,55.435356,2287.0535};
-		dir[]={0.096963756,-0.47964269,-0.87209994};
-		up[]={0.053002536,0.87745923,-0.47670758};
-		aside[]={-0.9938851,1.1862903e-007,-0.1105046};
+		pos[]={6725.8862,411.36035,2598.5146};
+		dir[]={-0.55480212,-0.64933306,0.52016211};
+		up[]={-0.47369862,0.76050389,0.44412211};
+		aside[]={0.68396753,-2.6149792e-007,0.72951663};
 	};
 };
 binarizationWanted=0;
@@ -86,13 +86,14 @@ addons[]=
 	"milgp_vests_cfg",
 	"A3_Modules_F_Intel",
 	"A3_Weapons_F_Ammoboxes",
-	"A3_Structures_F_Kart_Mil_Flags"
+	"A3_Structures_F_Kart_Mil_Flags",
+	"po_factions_me"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=40;
+		items=41;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -366,6 +367,12 @@ class AddonsMetaData
 			name="Arma 3 Karts - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item40
+		{
+			className="po_factions_me";
+			name="po_factions_me";
+			author="Leight, Keeway";
 		};
 	};
 };
@@ -13951,7 +13958,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=441;
+		items=444;
 		class Item0
 		{
 			dataType="Logic";
@@ -41784,19 +41791,6 @@ class Mission
 		};
 		class Item436
 		{
-			dataType="Trigger";
-			position[]={6927.3271,288.5867,2541.8677};
-			class Attributes
-			{
-				condition="call{this}";
-				onActivation="call{[""pta_onSectorConquered"", [""pta_sector_1""]] call CBA_fnc_globalEvent;}";
-				activationBy="WEST";
-			};
-			id=3072;
-			type="EmptyDetectorAreaR50";
-		};
-		class Item437
-		{
 			dataType="Marker";
 			position[]={15502.456,183.80901,495.35999};
 			name="pta_sector_2";
@@ -41808,7 +41802,7 @@ class Mission
 			id=3075;
 			atlOffset=123.59432;
 		};
-		class Item438
+		class Item437
 		{
 			dataType="Marker";
 			position[]={15181.373,66.471001,473.21701};
@@ -41818,7 +41812,7 @@ class Mission
 			id=3076;
 			atlOffset=-0.0004196167;
 		};
-		class Item439
+		class Item438
 		{
 			dataType="Marker";
 			position[]={12494.461,144.24347,5497.7607};
@@ -41831,7 +41825,7 @@ class Mission
 			id=3077;
 			atlOffset=123.56782;
 		};
-		class Item440
+		class Item439
 		{
 			dataType="Marker";
 			position[]={12238.549,24.787001,5545.6162};
@@ -41840,6 +41834,153 @@ class Mission
 			type="mil_circle";
 			id=3078;
 			atlOffset=0.00046157837;
+		};
+		class Item440
+		{
+			dataType="Trigger";
+			position[]={6551.5322,321.65924,2468.125};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{[""pta_onUnitInSector"", [""pta_sector_1""]] call CBA_fnc_globalEvent;}";
+				onDeactivation="call{[""asdf""] call BIS_fnc_deleteTask; }";
+				sizeA=1000;
+				sizeB=1000;
+				activationBy="WEST";
+			};
+			id=3079;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item441
+		{
+			dataType="Marker";
+			position[]={6631.062,328.73999,2640.657};
+			name="pta_task_sector1";
+			type="Empty";
+			id=3080;
+			atlOffset=-2.4487915;
+		};
+		class Item442
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7561.4805,221.48486,2255.6592};
+						angles[]={0,4.7342792,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=3082;
+					type="B_Soldier_A_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3081;
+		};
+		class Item443
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6637.96,331.17145,2647.364};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						name="officer";
+					};
+					id=3084;
+					type="LOP_ISTS_OPF_Infantry_Corpsman";
+					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3083;
+			atlOffset=3.0517578e-005;
 		};
 	};
 	class Connections

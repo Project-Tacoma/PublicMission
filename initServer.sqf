@@ -16,5 +16,9 @@ missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTick
 }] call CBA_fnc_addEventHandler;
 
 ["pta_onSectorConquered", {
-  [_this select 0] call FUNC(onSectorConquered);
+  [_this select 0, _this select 1] call FUNC(onSectorConquered);
+}] call CBA_fnc_addEventHandler;
+
+["pta_onUnitInSector", {
+  [_this select 0] call FUNC(onUnitInSector);
 }] call CBA_fnc_addEventHandler;

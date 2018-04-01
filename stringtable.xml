@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA3">
+    <Package name="pta_framework">
+        <Container name="translation">
+            <Key ID="STR_pta_sector_conquered">
+                <English>Sector is under our control</English>
+                <German>Der Sektor ist jetzt unter unserer Controlle</German>
+                <Original>Sector is under our control</Original>
+            </Key>
+        </Container>
+    </Package>
+</Project>

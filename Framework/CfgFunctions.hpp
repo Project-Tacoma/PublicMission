@@ -8,6 +8,7 @@ class ADDON {
     class onTicketLose{};
     class onTaskCompleted{};
     class onSectorConquered{};
+    class onUnitInSector{};
   };
 
   class ticket {
