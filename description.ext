@@ -9,11 +9,11 @@ respawnDialog   = 1;
 joinUnassigned  = 1;
 
 #include "script_common_macros.hpp"
-#include "CfgTicketSystem.hpp"
-#include "CfgTaskSystem.hpp"
-#include "CfgSector.hpp"
-#include "CfgProvince.hpp"
-#include "CfgNotifications.hpp"
+#include "config\CfgTicketSystem.hpp"
+#include "config\CfgTaskSystem.hpp"
+#include "config\CfgSector.hpp"
+#include "config\CfgProvince.hpp"
+#include "config\CfgNotifications.hpp"
 
 class Header {
   gameType    = COOP;
@@ -30,5 +30,5 @@ class CfgFunctions {
 
 class RscTitles {
   titles[] = {"Pta_UI"};
-  #include "Pta_UI.h"
+  #include "UI\Pta_UI.h"
 };

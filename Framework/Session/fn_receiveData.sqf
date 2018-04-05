@@ -12,6 +12,6 @@
  *
  */
 
-params["_name", "_value"];
+params["_namespace","_name", "_value"];
 
-player setVariable [_name, _value, true];
+_namespace setVariable [_name, _value, true];

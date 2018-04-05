@@ -5,6 +5,16 @@
  *
  */
 
+//Check if the player chan access the slot
+/*
+ private _allUIDs = ["12315123123", "1323145123123123"];
+ private _slots = ["p1"];
+ if (str player in _slots && !{getPlayerUID player in _allUIDs}) then {
+     ["You are not entitled to use this slot!"] call BIS_fnc_infoText;
+     sleep 30;
+     ["end1",false] call BIS_fnc_endMission;
+ };*/
+
 //Add respawn eh
 [player] call FUNC(onRespawn);
 
@@ -29,5 +39,4 @@
 [_player] call FUNC(checkTFARConnection);
 #endif
 
-cutRsc ["Pta_UI", "PLAIN"];
 call FUNC(initHud);

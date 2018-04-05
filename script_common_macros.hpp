@@ -2,10 +2,10 @@
 #define COMPONENT framework
 
 #define PT_Dev true
-#define FULE 1001;
-#define OIL 1002;
-#define SULFUR 1000;
-#define MORAL 1003;
+#define FUEL 1000
+#define DIESEL 1001
+#define KEROSENE 1002
+#define MORAL 1003
 
 #define MAJOR 1
 #define MINOR 0
