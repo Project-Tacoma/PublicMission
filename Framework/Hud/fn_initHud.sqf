@@ -4,9 +4,9 @@ waitUntil {!(isNull (findDisplay 46))};
 
 cutRsc ["Pta_UI", "PLAIN"];
 
-_fuelText = parseText format["<t size='1.25'> %1 </t> <br/><t size='1.5' align='center'>%2</t> ", localize "STR_pta_ui_fuel", 100];
-_dieselText = parseText format["<t size='1.25'> %1 </t> <br/><t size='1.5' align='center'>%2</t> ", localize "STR_pta_ui_oil", 100];
-_keroseneText = parseText format["<t size='1.25'> %1 </t> <br/><t size='1.5' align='center'>%2</t> ", localize "STR_pta_ui_sulfur", 100];
+_fuelText = parseText format["<t size='1.25'> %1 </t> <br/><t size='1.5' align='center'>%2</t> ", localize "STR_pta_ui_fuel", (['Fuel'] call FUNC(getResource))];
+_dieselText = parseText format["<t size='1.25'> %1 </t> <br/><t size='1.5' align='center'>%2</t> ", localize "STR_pta_ui_oil", (['Diesel'] call FUNC(getResource))];
+_keroseneText = parseText format["<t size='1.25'> %1 </t> <br/><t size='1.5' align='center'>%2</t> ", localize "STR_pta_ui_sulfur", (['Kerosene'] call FUNC(getResource))];
 _moralText = parseText format["<t size='1.25'> %1 </t> <br/><t size='1.5' align='center'>%2</t> ", localize "STR_pta_ui_moral", (call FUNC(getTicket))];
 
 ((GET_PLAYER_UI) displayCtrl FUEL) ctrlSetStructuredText _fuelText;

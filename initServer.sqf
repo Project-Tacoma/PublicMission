@@ -6,6 +6,9 @@ call FUNC(connector);
 //Set mission vars
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
 missionNamespace setVariable ["PTA_Conquered_Sector", []];
+missionNamespace setVariable ["PTA_Resource_Fuel", 10];
+missionNamespace setVariable ["PTA_Resource_Kerosene", 15];
+missionNamespace setVariable ["PTA_Resource_Diesel", 20];
 
 //Add Costum EH's
 ["pta_onTicketLose", {

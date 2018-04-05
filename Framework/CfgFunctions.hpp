@@ -58,6 +58,13 @@ class ADDON {
   class hud {
     file="Framework\Hud";
     class initHud{};
+    class updateHud{};
+  };
+
+  class resource {
+    file="Framework\Resource";
+    class addResource{};
+    class getResource{};
   };
 
 };
