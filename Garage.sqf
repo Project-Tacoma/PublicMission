@@ -3,13 +3,13 @@
  *	select 0:	Object
  *	select 1:	Markername
  *	select 2:	VehicleType: "All", "Car", "Helicopter", "Plane", "Maritime", "Armored", "Autonomous", "Support"
- *	
- *	
- *	
- *	
+ *
+ *
+ *
+ *
  */
 
- 
+
 _garage = _this select 0;
 _marker = _this select 1;
 _vehicleType = _this select 2;
@@ -46,37 +46,37 @@ then
 		["", "", "", (_this select 2)] call VVS_fnc_openVVS;
 	},{true}, {}, [_marker, "Car"], [0, 0, 0], 5] call ace_interact_menu_fnc_createAction;
 	[_garage, 0, ["VVS"], _action1_1] call ace_interact_menu_fnc_addActionToObject;
-	
+
 	_action1_2 = ["VVS_Helicopter","Helicopter","\a3\ui_f\data\gui\Rsc\RscDisplayGarage\helicopter_ca.paa",
 	{
 		["", "", "", (_this select 2)] call VVS_fnc_openVVS;
 	},{true}, {}, [_marker, "Helicopter"], [0, 0, 0], 5] call ace_interact_menu_fnc_createAction;
 	[_garage, 0, ["VVS"], _action1_2] call ace_interact_menu_fnc_addActionToObject;
-	
+
 	_action1_3 = ["VVS_Plane","Plane","\a3\ui_f\data\gui\Rsc\RscDisplayGarage\plane_ca.paa",
 	{
 		["", "", "", (_this select 2)] call VVS_fnc_openVVS;
 	},{true}, {}, [_marker, "Plane"], [0, 0, 0], 5] call ace_interact_menu_fnc_createAction;
 	[_garage, 0, ["VVS"], _action1_3] call ace_interact_menu_fnc_addActionToObject;
-	
+
 	_action1_4 = ["VVS_Maritime","Maritime","\a3\ui_f\data\gui\Rsc\RscDisplayGarage\naval_ca.paa",
 	{
 		["", "", "", (_this select 2)] call VVS_fnc_openVVS;
 	},{true}, {}, [_marker, "Maritime"], [0, 0, 0], 5] call ace_interact_menu_fnc_createAction;
 	[_garage, 0, ["VVS"], _action1_4] call ace_interact_menu_fnc_addActionToObject;
-	
+
 	_action1_5 = ["VVS_Armored","Armored","\a3\ui_f\data\gui\Rsc\RscDisplayGarage\tank_ca.paa",
 	{
 		["", "", "", (_this select 2)] call VVS_fnc_openVVS;
 	},{true}, {}, [_marker, "Armored"], [0, 0, 0], 5] call ace_interact_menu_fnc_createAction;
 	[_garage, 0, ["VVS"], _action1_5] call ace_interact_menu_fnc_addActionToObject;
-	
+
 	_action1_6 = ["VVS_Autonomous","Autonomous","\a3\drones_f\Air_F_Gamma\UAV_01\Data\UI\UAV_01_CA.paa",
 	{
 		["", "", "", (_this select 2)] call VVS_fnc_openVVS;
 	},{true}, {}, [_marker, "Autonomous"], [0, 0, 0], 5] call ace_interact_menu_fnc_createAction;
 	[_garage, 0, ["VVS"], _action1_6] call ace_interact_menu_fnc_addActionToObject;
-	
+
 	_action1_7 = ["VVS_Support","Support","\a3\ui_f\data\gui\Rsc\RscDisplayGarage\static_ca.paa",
 	{
 		["", "", "", (_this select 2)] call VVS_fnc_openVVS;
@@ -101,7 +101,7 @@ if (typeOf _garage in ["Box_IND_AmmoVeh_F","Box_EAST_AmmoVeh_F","Box_NATO_AmmoVe
 	_lamp = "Land_PortableLight_single_F" createVehicleLocal position _garage;
 	_lamp allowDamage false;
 	_lamp enableSimulation true;
-	[_lamp, false] call ace_dragging_fnc_setDraggable; 
+	[_lamp, false] call ace_dragging_fnc_setDraggable;
 	[_lamp, false] call ace_dragging_fnc_setCarryable;
 	_lamp setPos [getPos _garage select 0, getPos _garage select 1, (getPos _garage select 2) + 1.5];
 	_lamp setDir (([_lamp, getMarkerPos _marker] call BIS_fnc_dirTo) + 180);

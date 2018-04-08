@@ -16,9 +16,12 @@ _status = _dbValues select 0;
 
 //Check for error
 if (_status == 0) exitWith {
-  diag_log format["[PROJECT-TACOMA] DATABASE ERROR: %1", _dbValues select 1];
+  diag_log format["[PROJECT-TACOMA] DATABASE ERROR: %1", _status];
   false
 };
+
+diag_log format["[PROJECT-TACOMA] DATABASE ERROR: %1", _dbValues select 1];
+
 _result = _dbValues select 1;
 
 _result

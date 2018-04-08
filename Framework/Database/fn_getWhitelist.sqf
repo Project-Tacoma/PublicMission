@@ -1,5 +1,6 @@
-params["_player", "_clientID"];
+#include "..\..\script_common_macros.hpp"
 
-_result = call compile (DB format["0:sql:getPlayer:%1", getPlayerUID _player]);
-_result = [_result] call FUNC(getResult);
-[_player,"pta_player",_result] remoteExec [QFUNC(receiveData), _clientID];
+_resultDB = call compile (DB format["0:sql:getWhitelistAdmin"]);
+_result = [_resultDB] call FUNC(getResult);
+diag_log format["[PROJECT-TACOMA] DATABASE ERROR: %1", _result];
+missionNamespace setVariable ["pta_whitelist_admin", _result];

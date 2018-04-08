@@ -21,6 +21,8 @@ class ADDON {
   class task {
     file="Framework\Task";
     class createTask{};
+    class initTask{};
+    class taskWatcher{};
   };
 
   class generator {
@@ -39,6 +41,7 @@ class ADDON {
     class savePlayer{};
     class getResult{};
     class displayPlayer{};
+    class getWhitelist{};
   };
 
   class tfar {
@@ -53,6 +56,7 @@ class ADDON {
 
   class sector {
     file="Framework\Sector";
+    class initSector{};
   };
 
   class hud {
@@ -65,6 +69,7 @@ class ADDON {
     file="Framework\Resource";
     class addResource{};
     class getResource{};
+    class addTick{};
   };
 
 };

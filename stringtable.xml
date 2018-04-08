@@ -12,14 +12,14 @@
               <German>Benzin</German>
               <Original>Fule</Original>
             </Key>
-            <Key ID="STR_pta_ui_oil">
-              <English>Oil</English>
-              <German>Öl</German>
-              <Original>Oil</Original>
+            <Key ID="STR_pta_ui_diesel">
+              <English>Diesel</English>
+              <German>Diesel</German>
+              <Original>Diesel</Original>
             </Key>
-            <Key ID="STR_pta_ui_sulfur">
-              <English>Sulfur</English>
-              <German>Schwefel</German>
+            <Key ID="STR_pta_ui_kerosene">
+              <English>Kerosene</English>
+              <German>Kerosin</German>
               <Original>Sulfur</Original>
             </Key>
             <Key ID="STR_pta_ui_moral">

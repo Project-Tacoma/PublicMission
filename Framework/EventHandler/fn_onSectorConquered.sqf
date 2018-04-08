@@ -3,10 +3,12 @@
 params["_sector", "_task"];
 
 _sectorName = getText(missionConfigFile >> "CfgSector" >> _sector >> "name");
+_sectorMarker = gettext(missionConfigFile >> "CfgSector" >> _sector >> "marker");
 _rescources = "";
+
 {
   _rescources = format["%1 %2", _rescources, _x];
-
+  [_x] remoteExec [QFUNC(addTick), 2];
 
   nil
 } count(getArray(missionConfigFile >> "CfgSector" >> _sector >> "resource"));
@@ -15,5 +17,4 @@ _mgs = format["Resourcen: %1", _rescources];
 ["pta_sector_conquered",[_mgs]] call bis_fnc_showNotification;
 
 
-_sector setMarkerColor "ColorBlufor";
-[_task, "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
+_sectorMarker setMarkerColor "ColorBlufor";

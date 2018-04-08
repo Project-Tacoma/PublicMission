@@ -10,6 +10,12 @@ missionNamespace setVariable ["PTA_Resource_Fuel", 10];
 missionNamespace setVariable ["PTA_Resource_Kerosene", 15];
 missionNamespace setVariable ["PTA_Resource_Diesel", 20];
 
+//Init whitelist
+call FUNC(getWhitelist);
+
+//Init sector
+call FUNC(initSector);
+
 //Add Costum EH's
 ["pta_onTicketLose", {
   [_this select 0, _this select 1] call FUNC(onTicketLose);
