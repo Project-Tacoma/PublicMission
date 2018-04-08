@@ -16,6 +16,9 @@ call FUNC(getWhitelist);
 //Init sector
 call FUNC(initSector);
 
+//Init task watcher
+call FUNC(taskWatcher);
+
 //Add Costum EH's
 ["pta_onTicketLose", {
   [_this select 0, _this select 1] call FUNC(onTicketLose);
