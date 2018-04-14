@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 
-params["_sector", "_task"];
+params["_sector"];
 
 _sectorName = getText(missionConfigFile >> "CfgSector" >> _sector >> "name");
 _sectorMarker = gettext(missionConfigFile >> "CfgSector" >> _sector >> "marker");
