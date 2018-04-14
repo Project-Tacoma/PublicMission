@@ -72,4 +72,10 @@ class ADDON {
     class addTick{};
   };
 
+  class commander {
+    file="Framework\Commander";
+    class initCommander{};
+    class spawnUnit{};
+  };
+
 };

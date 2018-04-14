@@ -13,8 +13,8 @@ class CfgSector {
   class pta_sector_2 {
     name="sector_zregurat";
     marker="pta_sector_zregurat";
-    resource[] = {"Ammo"};
-    tasks[] = {"pta_task_sector1"};
+    resource[] = {"Fuel"};
+    tasks[] = {"pta_task_sector2"};
     province[] = {"pta_province_1"};
   };
 

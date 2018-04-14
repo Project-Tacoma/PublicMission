@@ -14,6 +14,7 @@ joinUnassigned  = 1;
 #include "config\CfgSector.hpp"
 #include "config\CfgProvince.hpp"
 #include "config\CfgNotifications.hpp"
+#include "config\CfgUnits.hpp"
 
 class Header {
   gameType    = COOP;

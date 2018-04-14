@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3644;
+		nextID=3667;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=212;
+		nextID=216;
 	};
 	class Camera
 	{
-		pos[]={3952.8389,397.25333,930.33203};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={4239.98,649.38116,649.15118};
+		dir[]={0.89296252,-0.42729872,-0.14155826};
+		up[]={0.42202958,0.90411133,-0.066902958};
+		aside[]={-0.15657224,5.599577e-008,-0.98766929};
 	};
 };
 binarizationWanted=0;
@@ -14009,7 +14009,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=528;
+		items=531;
 		class Item0
 		{
 			dataType="Logic";
@@ -46339,97 +46339,6 @@ class Mission
 		class Item524
 		{
 			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3930.6514,377.79019,976.8371};
-						angles[]={0,2.2313068,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=3637;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male06ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.94999999;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=3636;
-		};
-		class Item525
-		{
-			dataType="Group";
 			side="East";
 			class Entities
 			{
@@ -46518,7 +46427,7 @@ class Mission
 			};
 			id=3640;
 		};
-		class Item526
+		class Item525
 		{
 			dataType="Trigger";
 			position[]={4143.3901,358.43091,834.617};
@@ -46533,13 +46442,160 @@ class Mission
 			id=3642;
 			type="EmptyDetectorAreaR250";
 		};
-		class Item527
+		class Item526
 		{
 			dataType="Marker";
 			position[]={4188.855,358.59,844.48199};
 			name="pta_task_sector3";
 			type="Empty";
 			id=3643;
+		};
+		class Item527
+		{
+			dataType="Trigger";
+			position[]={10009.292,59.328747,1368.125};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{[""pta_sector_2""] call pta_framework_fnc_initTask}";
+				sizeA=250;
+				sizeB=250;
+				activationBy="WEST";
+			};
+			id=3659;
+			type="EmptyDetectorAreaR250";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item528
+		{
+			dataType="Marker";
+			position[]={10029.036,59.299999,1363.312};
+			name="pta_task_sector1";
+			type="Empty";
+			id=3660;
+			atlOffset=0.00033569336;
+		};
+		class Item529
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10030.395,58.888893,1394.3311};
+						angles[]={0,1.606593,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						name="officer_1";
+					};
+					id=3662;
+					type="LOP_ISTS_OPF_Infantry_SL";
+					atlOffset=0.02299881;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3661;
+			atlOffset=0.02299881;
+		};
+		class Item530
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9746.5127,69.566223,1417.0203};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=3666;
+					type="rhsusf_army_ocp_autorifleman";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3665;
 		};
 	};
 };

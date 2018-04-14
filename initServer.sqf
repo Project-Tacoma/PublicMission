@@ -19,6 +19,9 @@ call FUNC(initSector);
 //Init task watcher
 call FUNC(taskWatcher);
 
+//Init commander
+call FUNC(initCommander);
+
 //Add Costum EH's
 ["pta_onTicketLose", {
   [_this select 0, _this select 1] call FUNC(onTicketLose);
