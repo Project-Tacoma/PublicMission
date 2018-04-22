@@ -15,7 +15,7 @@
 		       [_x, "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 
            if (count(_tasks) == 0) then {
-              missionNamespace setVariable [(format["pta_sector_tasks_%1", _currentSector]), "s"];
+              missionNamespace setVariable [(format["pta_sector_tasks_%1", _currentSector]), ["s"]];
            } else {
               missionNamespace setVariable [(format["pta_sector_tasks_%1", _currentSector]), _tasks];
            };

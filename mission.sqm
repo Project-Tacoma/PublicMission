@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=216;
+		nextID=220;
 	};
 	class Camera
 	{
-		pos[]={4239.98,649.38116,649.15118};
-		dir[]={0.89296252,-0.42729872,-0.14155826};
-		up[]={0.42202958,0.90411133,-0.066902958};
-		aside[]={-0.15657224,5.599577e-008,-0.98766929};
+		pos[]={20255.834,99.536469,4976.8799};
+		dir[]={-0.51583618,-0.43325704,-0.73905873};
+		up[]={-0.24797173,0.90126938,-0.35527879};
+		aside[]={-0.82001698,1.5657861e-008,0.57234257};
 	};
 };
 binarizationWanted=0;
@@ -20344,7 +20344,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -21354,7 +21354,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -21720,7 +21720,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -22087,7 +22087,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -22822,7 +22822,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -23205,7 +23205,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -23529,7 +23529,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -24382,7 +24382,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_map_hideBlueForceMarker";
-							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker',_this select 1,true];},[_this,_value]] call CBA_fnc_execNextFrame};";
+							expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];},[_this,_value]] call CBA_fnc_execNextFrame};";
 							class Value
 							{
 								class data
@@ -26621,7 +26621,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_refuel_fuelCargo";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this,_value] call ace_refuel_fnc_makeSource}";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
 					class Value
 					{
 						class data
@@ -27849,7 +27849,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_refuel_fuelCargo";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this,_value] call ace_refuel_fnc_makeSource}";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
 					class Value
 					{
 						class data
@@ -29795,7 +29795,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_refuel_fuelCargo";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this,_value] call ace_refuel_fnc_makeSource}";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
 					class Value
 					{
 						class data
@@ -30599,7 +30599,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -31314,7 +31314,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -32220,7 +32220,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -33107,7 +33107,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -33538,7 +33538,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -33651,7 +33651,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -33764,7 +33764,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -36132,7 +36132,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -36506,7 +36506,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_refuel_fuelCargo";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this,_value] call ace_refuel_fnc_makeSource}";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
 					class Value
 					{
 						class data
@@ -43859,7 +43859,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_refuel_fuelCargo";
-							expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this,_value] call ace_refuel_fnc_makeSource}";
+							expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
 							class Value
 							{
 								class data
@@ -44730,7 +44730,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_refuel_fuelCargo";
-							expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this,_value] call ace_refuel_fnc_makeSource}";
+							expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
 							class Value
 							{
 								class data
@@ -44771,7 +44771,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_refuel_fuelCargo";
-							expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this,_value] call ace_refuel_fnc_makeSource}";
+							expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
 							class Value
 							{
 								class data
@@ -46435,9 +46435,10 @@ class Mission
 			{
 				condition="call{this}";
 				onActivation="call{[""pta_sector_3""] call pta_framework_fnc_initTask}";
-				sizeA=250;
-				sizeB=250;
+				sizeA=400;
+				sizeB=400;
 				activationBy="WEST";
+				isRectangle=1;
 			};
 			id=3642;
 			type="EmptyDetectorAreaR250";
