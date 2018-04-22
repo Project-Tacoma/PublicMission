@@ -1,6 +1,7 @@
 onLoadName      = "Project Tacoma";
 author          = "Project Tacoma Team";
 onLoadMission   = "0.0.3 Pre-Alpha";
+loadScreen = 			"images\loadscreen.jpg";
 overviewText    = "";
 disabledAI      = true;
 respawn         = "BASE";

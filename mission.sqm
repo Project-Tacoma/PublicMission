@@ -46430,7 +46430,7 @@ class Mission
 		class Item525
 		{
 			dataType="Trigger";
-			position[]={4143.3901,358.43091,834.617};
+			position[]={4169.4561,358.47687,843.33374};
 			class Attributes
 			{
 				condition="call{this}";

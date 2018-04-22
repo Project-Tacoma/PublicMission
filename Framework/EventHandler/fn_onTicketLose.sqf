@@ -11,7 +11,7 @@
 params["_player", "_type"];
 
 //@AS_TODO fir the moment okay, but later we need to make this a little more dynamic
-if (_type == "pt_civ_killed") then {
+if (_type == "pta_civ_killed") then {
     private _currentTickets = call FUNC(getTicket);
     private _newTickets = _currentTickets - getNumber(missionConfigFile >> "CfgTicketSystem" >> "civPunish");
     [_newTickets] call FUNC(setTicket);
@@ -21,5 +21,5 @@ if (_type == "pt_civ_killed") then {
     [_newTickets] call FUNC(setTicket);
 };
 
-//show the new tickets
-call FUNC(showTicket);
+//update ui
+call FUNC(updateHud);
