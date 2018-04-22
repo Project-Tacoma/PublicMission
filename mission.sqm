@@ -46580,7 +46580,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9746.5127,69.566223,1417.0203};
+						position[]={11779.793,24.374748,2339.8169};
 					};
 					side="West";
 					flags=7;
@@ -46590,12 +46590,14 @@ class Mission
 					};
 					id=3666;
 					type="rhsusf_army_ocp_autorifleman";
+					atlOffset=3.8146973e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=3665;
+			atlOffset=3.8146973e-006;
 		};
 	};
 };
