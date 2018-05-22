@@ -25,5 +25,5 @@ class CfgUnits {
       "LOP_ISTS_OPF_Infantry_Rifleman"
     };
   };
-  
+
 };

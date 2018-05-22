@@ -13,9 +13,9 @@ _sectors = getArray(missionConfigFile >> "CfgSector" >> "sectors");
 
   //Create activation trigger
   _t=createTrigger["EmptyDetector",_markerPos,false];
-	_t setTriggerArea[400,400,(markerDir _markerName),true];
+	_t setTriggerArea[1000, 1000,(markerDir _markerName),true];
 	_t setTriggerTimeout[2,2,2,true];
-	_t setTriggerActivation["ANYPLAYER","PRESENT",TRUE];
+	_t setTriggerActivation["ANYPLAYER","PRESENT",false];
   _t setTriggerStatements [
     //Condition
     "this",

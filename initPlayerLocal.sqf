@@ -39,4 +39,12 @@
 [_player] call FUNC(checkTFARConnection);
 #endif
 
+//Fix for arsenal
+[{
+  if (uiNamespace getVariable ["Pta_UI", nil] isEqualTo Display) then {
+    call FUNC(initHud);
+  };
+
+}, 2] call CBA_fnc_addPerFrameHandler;
+
 call FUNC(initHud);

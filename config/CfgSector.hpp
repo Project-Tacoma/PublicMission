@@ -6,7 +6,7 @@ class CfgSector {
     name="sector_kindfu";
     marker="pta_sector_kindfu";
     resource[] = {"Fuel"};
-    tasks[] = {"pta_task_sector1"};
+    tasks[] = {"pta_task_sector3"};
     province[] = {"pta_province_1"};
   };
 

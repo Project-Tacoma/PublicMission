@@ -8,11 +8,11 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3668;
+		nextID=3672;
 	};
 	class MarkerIDProvider
 	{
-		nextID=121;
+		nextID=122;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4393.9229,780.55487,581.69568};
-		dir[]={0.95066732,-0.30992633,0.013475604};
-		up[]={0.30989662,0.9507612,0.0043926775};
-		aside[]={0.014173379,6.5992936e-009,-0.99990326};
+		pos[]={5221.4287,1133.8949,799.88312};
+		dir[]={0.87017661,-0.45525935,0.18857576};
+		up[]={0.44493312,0.89035648,0.096421927};
+		aside[]={0.21179561,4.5722118e-008,-0.97732878};
 	};
 };
 binarizationWanted=0;
@@ -101,13 +101,14 @@ addons[]=
 	"A3_Structures_F_Ind_Cargo",
 	"A3_Structures_F_Heli_Ind_Cargo",
 	"po_factions_me",
-	"Jbad_Misc_Com"
+	"Jbad_Misc_Com",
+	"rhs_c_a2port_armor"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=49;
+		items=50;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -429,6 +430,13 @@ class AddonsMetaData
 		{
 			className="Jbad_Misc_Com";
 			name="Jbad_Misc_Com";
+		};
+		class Item49
+		{
+			className="rhs_c_a2port_armor";
+			name="A2 ported armor";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -14015,7 +14023,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=529;
+		items=533;
 		class Item0
 		{
 			dataType="Logic";
@@ -46327,11 +46335,10 @@ class Mission
 		class Item522
 		{
 			dataType="Marker";
-			position[]={10019.913,58.625999,1361.25};
+			position[]={9838.04,18.873251,5756.9438};
 			name="pta_sector_zregurat";
 			type="Empty";
 			id=3633;
-			atlOffset=0.00036621094;
 		};
 		class Item523
 		{
@@ -46345,7 +46352,7 @@ class Mission
 		class Item524
 		{
 			dataType="Marker";
-			position[]={4188.855,358.59,844.48199};
+			position[]={3844.8181,366.7388,813.35773};
 			name="pta_task_sector3";
 			type="Empty";
 			id=3643;
@@ -46353,11 +46360,11 @@ class Mission
 		class Item525
 		{
 			dataType="Marker";
-			position[]={10029.036,59.299999,1363.312};
+			position[]={10110.005,13.211721,5717.4785};
 			name="pta_task_sector1";
 			type="Empty";
 			id=3660;
-			atlOffset=0.00033569336;
+			atlOffset=1.9048691;
 		};
 		class Item526
 		{
@@ -46371,7 +46378,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10030.395,58.888893,1394.3311};
+						position[]={10223.733,8.8866529,5676.9814};
 						angles[]={0,1.606593,0};
 					};
 					side="East";
@@ -46382,7 +46389,7 @@ class Mission
 					};
 					id=3662;
 					type="LOP_ISTS_OPF_Infantry_SL";
-					atlOffset=0.02299881;
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -46450,7 +46457,7 @@ class Mission
 			{
 			};
 			id=3661;
-			atlOffset=0.02299881;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item527
 		{
@@ -46498,6 +46505,146 @@ class Mission
 			};
 			id=3667;
 			type="jbad_Com_tower";
+		};
+		class Item529
+		{
+			dataType="Marker";
+			position[]={4176.666,358.55301,841.34302};
+			name="pta_sector_mozart_attack";
+			type="Empty";
+			id=3668;
+			atlOffset=0.00045776367;
+		};
+		class Item530
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15062.774,65.854393,385.74799};
+				angles[]={0.0052534412,4.5891166,0.0061784657};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="aa2";
+				receiveRemoteTargets=1;
+			};
+			id=3669;
+			type="rhs_zsu234_aa";
+			atlOffset=-0.0055351257;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_ak74m"",""FirstAidKit""],[1,4]],[[""rhs_30Rnd_545x39_7N10_AK"",""rhs_mag_rgd5"",""rhs_mag_nspn_red""],[10,10,10]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value,true];[_this,[['Number', cRHSZSUNumberPlaces, _value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item531
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14953.571,60.024891,503.64114};
+				angles[]={6.281981,1.4457784,0.0077667148};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="aa1";
+				receiveRemoteTargets=1;
+			};
+			id=3670;
+			type="rhs_zsu234_aa";
+			atlOffset=-0.020992279;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_ak74m"",""FirstAidKit""],[1,4]],[[""rhs_30Rnd_545x39_7N10_AK"",""rhs_mag_rgd5"",""rhs_mag_nspn_red""],[10,10,10]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value,true];[_this,[['Number', cRHSZSUNumberPlaces, _value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item532
+		{
+			dataType="Marker";
+			position[]={14991.407,61.945999,394.57599};
+			name="pta_task_sector2";
+			type="Empty";
+			id=3671;
+			atlOffset=0.027194977;
 		};
 	};
 };
