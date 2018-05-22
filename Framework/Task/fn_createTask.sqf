@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [NRF] flaver
+ * Author: flaver
  * creates a Task based on the infos from the cfg
  *
  * Arguments:

@@ -1,5 +1,5 @@
 /*
- * Author: [NRF] flaver
+ * Author:  flaver
  * Setter for tickets
  *
  * Arguments:

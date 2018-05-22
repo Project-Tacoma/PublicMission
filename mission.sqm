@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3667;
+		nextID=3668;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=220;
+		nextID=224;
 	};
 	class Camera
 	{
-		pos[]={20255.834,99.536469,4976.8799};
-		dir[]={-0.51583618,-0.43325704,-0.73905873};
-		up[]={-0.24797173,0.90126938,-0.35527879};
-		aside[]={-0.82001698,1.5657861e-008,0.57234257};
+		pos[]={4393.9229,780.55487,581.69568};
+		dir[]={0.95066732,-0.30992633,0.013475604};
+		up[]={0.30989662,0.9507612,0.0043926775};
+		aside[]={0.014173379,6.5992936e-009,-0.99990326};
 	};
 };
 binarizationWanted=0;
@@ -100,13 +100,14 @@ addons[]=
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Structures_F_Ind_Cargo",
 	"A3_Structures_F_Heli_Ind_Cargo",
-	"po_factions_me"
+	"po_factions_me",
+	"Jbad_Misc_Com"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=48;
+		items=49;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -423,6 +424,11 @@ class AddonsMetaData
 			className="po_factions_me";
 			name="po_factions_me";
 			author="Leight, Keeway";
+		};
+		class Item48
+		{
+			className="Jbad_Misc_Com";
+			name="Jbad_Misc_Com";
 		};
 	};
 };
@@ -14009,7 +14015,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=531;
+		items=529;
 		class Item0
 		{
 			dataType="Logic";
@@ -46338,136 +46344,13 @@ class Mission
 		};
 		class Item524
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4191.3481,358.59143,845.14996};
-						angles[]={0,1.606593,0};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-						name="officer";
-					};
-					id=3641;
-					type="LOP_ISTS_OPF_Infantry_SL";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=3640;
-		};
-		class Item525
-		{
-			dataType="Trigger";
-			position[]={4169.4561,358.47687,843.33374};
-			class Attributes
-			{
-				condition="call{this}";
-				onActivation="call{[""pta_sector_3""] call pta_framework_fnc_initTask}";
-				sizeA=400;
-				sizeB=400;
-				activationBy="WEST";
-				isRectangle=1;
-			};
-			id=3642;
-			type="EmptyDetectorAreaR250";
-		};
-		class Item526
-		{
 			dataType="Marker";
 			position[]={4188.855,358.59,844.48199};
 			name="pta_task_sector3";
 			type="Empty";
 			id=3643;
 		};
-		class Item527
-		{
-			dataType="Trigger";
-			position[]={10009.292,59.328747,1368.125};
-			class Attributes
-			{
-				condition="call{this}";
-				onActivation="call{[""pta_sector_2""] call pta_framework_fnc_initTask}";
-				sizeA=250;
-				sizeB=250;
-				activationBy="WEST";
-			};
-			id=3659;
-			type="EmptyDetectorAreaR250";
-			atlOffset=-3.8146973e-006;
-		};
-		class Item528
+		class Item525
 		{
 			dataType="Marker";
 			position[]={10029.036,59.299999,1363.312};
@@ -46476,7 +46359,7 @@ class Mission
 			id=3660;
 			atlOffset=0.00033569336;
 		};
-		class Item529
+		class Item526
 		{
 			dataType="Group";
 			side="East";
@@ -46569,7 +46452,7 @@ class Mission
 			id=3661;
 			atlOffset=0.02299881;
 		};
-		class Item530
+		class Item527
 		{
 			dataType="Group";
 			side="West";
@@ -46599,6 +46482,22 @@ class Mission
 			};
 			id=3665;
 			atlOffset=3.8146973e-006;
+		};
+		class Item528
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3822.7529,406.79633,719.349};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="radiotower";
+			};
+			id=3667;
+			type="jbad_Com_tower";
 		};
 	};
 };

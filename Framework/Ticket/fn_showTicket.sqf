@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [NRF] flaver
+ * Author:  flaver
  * Show's the current tickets to the user
  *
  *

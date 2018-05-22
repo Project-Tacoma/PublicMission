@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [NRF] flaver
+ * Author:  flaver
  * Gets a player by his UID and sends him back to the client
  *
  * Arguments:

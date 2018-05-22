@@ -1,3 +1,4 @@
 .project
 link.sqdev
 org.*
+.settings

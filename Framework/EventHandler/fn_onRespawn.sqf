@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [NRF] flaver
+ * Author:  flaver
  * Event will be triggerd only on server
  *
  * Arguments:

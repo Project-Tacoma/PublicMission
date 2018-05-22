@@ -1,4 +1,4 @@
-params["_selectedUnits", "_area"];
+params["_selectedUnits", "_area", ["_typeOfDuty", "PTA_PATROL"]];
 
 {
   _group = createGroup[east, true];
@@ -17,6 +17,16 @@ params["_selectedUnits", "_area"];
     nil
   } count _units;
 
-  [_group, _position, _rad, 20, "MOVE", "SAFE", "YELLOW", "LIMITED", (selectRandom _formation)] call CBA_fnc_taskPatrol;
+  switch (_typeOfDuty) do {
+    case 'PTA_ATTACK':
+    {
+      [_group, _position, 500] call CBA_fnc_taskAttack;
+    };
+    default {
+      [_group, _position, _rad, 20, "MOVE", "SAFE", "YELLOW", "LIMITED", (selectRandom _formation)] call CBA_fnc_taskPatrol;
+    };
+  };
+
+
   nil
 } count _selectedUnits;

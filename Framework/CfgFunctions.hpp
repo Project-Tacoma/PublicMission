@@ -76,6 +76,7 @@ class ADDON {
     file="Framework\Commander";
     class initCommander{};
     class spawnUnit{};
+    class sectorWatcher{};
   };
 
 };

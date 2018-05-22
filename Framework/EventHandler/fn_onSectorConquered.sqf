@@ -18,3 +18,7 @@ _mgs = format["Resourcen: %1", _rescources];
 
 
 _sectorMarker setMarkerColor "ColorBlufor";
+
+_sectorsToArrack = missionNamespace getVariable "PTA_Conquered_Sector";
+_sectorsToArrack pushBack _sector;
+missionNamespace setVariable ["PTA_Conquered_Sector", _sectorsToArrack];

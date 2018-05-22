@@ -1,6 +1,6 @@
 #include "..\..\script_common_macros.hpp"
 /*
- * Author: [NRF] flaver
+ * Author:  flaver
  * This will parse the result
  *
  * Arguments:
