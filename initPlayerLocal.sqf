@@ -41,7 +41,8 @@
 
 //Fix for arsenal
 [{
-  if (uiNamespace getVariable ["Pta_UI", nil] isEqualTo Display) then {
+
+  if !(isNull(findDisplay 1127001)) then {
     call FUNC(initHud);
   };
 

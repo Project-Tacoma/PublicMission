@@ -1,4 +1,4 @@
-params["_selectedUnits", "_area", ["_typeOfDuty", "PTA_PATROL"]];
+params["_selectedUnits", "_area", ["_typeOfDuty", "PTA_PATROL"], ["_sector", ""]];
 
 {
   _group = createGroup[east, true];
@@ -20,7 +20,9 @@ params["_selectedUnits", "_area", ["_typeOfDuty", "PTA_PATROL"]];
   switch (_typeOfDuty) do {
     case 'PTA_ATTACK':
     {
-      [_group, _position, 500] call CBA_fnc_taskAttack;
+      _attacksPos = getArray(missionConfigfile >> "CfgSector" >> _sector >> "attackTargets");
+
+      [_group, (getMarkerPos(selectRandom _attacksPos)), 500] call CBA_fnc_taskAttack;
     };
     default {
       [_group, _position, _rad, 20, "MOVE", "SAFE", "YELLOW", "LIMITED", (selectRandom _formation)] call CBA_fnc_taskPatrol;

@@ -3,9 +3,13 @@
 //Init databse
 call FUNC(connector);
 
+//Set globals
+GVAR(Resource_Ticks) = [] call CBA_fnc_hashCreate;
+
 //Set mission vars
 missionNamespace setVariable ["Tickets", getNumber(missionConfigFile >> "CfgTicketSystem" >> "tickets")];
 missionNamespace setVariable ["PTA_Conquered_Sector", []];
+missionNamespace setVariable ["PTA_Sector_Attacked", []];
 missionNamespace setVariable ["PTA_Resource_Fuel", 10];
 missionNamespace setVariable ["PTA_Resource_Kerosene", 15];
 missionNamespace setVariable ["PTA_Resource_Diesel", 20];

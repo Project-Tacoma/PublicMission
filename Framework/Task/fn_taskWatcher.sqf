@@ -49,7 +49,21 @@
 
 					nil
 				} forEach _tasks;
-			};
+			} else { //Reconquer a sector
+        if (_currentSector in (missionNamespace getVariable "PTA_Sector_Attacked")) then {
+          _count = 0;
+           {
+             if(side _x == opfor && ((getMarkerPos _markerName) distance _x < 400)) then {
+               _count = _count + 1;
+             };
+             nil
+           } count allUnits;
+           _attacked = missionNamespace getVariable "PTA_Sector_Attacked";
+           _attacked deleteAt (_attacked find _currentSector);
+           missionNamespace setVariable["PTA_Sector_Attacked", _attacked];
+           ["pta_onSectorConquered",[_currentSector]] call CBA_fnc_GlobalEvent;
+        };
+      };
 			nil
 		} count _sectors;
 }, 10 , []] call CBA_fnc_addPerFrameHandler;

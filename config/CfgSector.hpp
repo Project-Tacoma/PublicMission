@@ -21,6 +21,7 @@ class CfgSector {
   class pta_sector_3 {
     name="sector_mozart";
     marker="pta_sector_mozart";
+    attackTargets[] = {"pta_sector_mozart_attack"};
     resource[] = {"Diesel"};
     tasks[] = {"pta_task_sector1"};
     province[] = {"pta_province_1"};

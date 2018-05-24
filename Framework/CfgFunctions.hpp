@@ -70,6 +70,7 @@ class ADDON {
     class addResource{};
     class getResource{};
     class addTick{};
+    class removeTick{};
   };
 
   class commander {
